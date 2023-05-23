@@ -1,0 +1,23 @@
+#root {
+  position: fixed;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  overflow: auto;
+  background: linear-gradient(120deg, rgb(96, 190, 101), rgb(99, 134, 211));
+}
+
+.dashboard {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.chatbox-list {
+  // position: relative;
+  overflow: scroll;
+  display: flex;
+  margin: 10px;
+  margin-top: 150px;
+}

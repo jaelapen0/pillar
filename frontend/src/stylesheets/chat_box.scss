@@ -1,0 +1,229 @@
+
+.chatbox-list {
+  overflow: scroll;
+  display: flex;
+  margin: 10px;
+  height: 800px;
+}
+
+.open {
+  padding-right: 10px;
+}
+
+.chatbox-container {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  background: rgba(255, 255, 255, 0.1);
+  color: white;
+  border-radius: 5px;
+  box-shadow: 1px 1px 12px rgba(0, 0, 0, 0.1);
+  height: 740px;
+  width: 300px;
+
+  h1 {
+    display: inline;
+    white-space: nowrap;
+    overflow: hidden;
+  }
+}
+
+.chatbox-header {
+  display: flex;
+  justify-content: space-between;
+  padding: 3%;
+  background-color: #6684ce;
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+  max-height: 36px;
+  box-sizing: border-box;
+  align-items: center;
+  
+}
+
+.chatbox-header-menu {
+  position: absolute;
+  top: 39px;
+  width: 110px;
+  left: 176px;
+  background-color: #6684ce;
+  padding: 5px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  border-radius: 9px;
+  align-items: center;
+  z-index: 10;
+}
+
+.chatbox-header h1 {
+  display: inline;
+}
+
+.chatbox-header-icons {
+  display: flex;
+}
+
+.chatbox-ellipsis:hover {
+    cursor: pointer;
+    color: rgb(156, 154, 154);
+}
+
+.message-ul {
+  display: flex;
+  overflow-y: scroll;
+  height: 650px;
+  ul {
+    width: 100%;
+  }
+}
+
+.message-text-input{
+  margin-right: 7px;
+    color: white;
+    height: 23px;
+    width: 69%;
+    margin-left: 2px;
+}
+
+.input-container {
+    display: flex;
+    padding: 2%;
+    justify-content: space-between;
+    height: 25px;
+    width: 100%;
+}
+
+input.message-text-input::placeholder {
+    color: #f5f0f069;
+}
+
+.text-input-button:hover {
+    background-color: #7a65cd;
+}
+
+.text-input-button.reply:hover {
+    background-color: #859dd7;
+}
+
+.text-input-button2:hover {
+    background-color: #7a65cd;
+}
+
+button.delete-input-button {
+  margin: 3px;
+  padding-top: 3px;
+  padding-bottom: 3px;
+  width: 107px;
+}
+
+button.delete-input-button:hover{
+  background-color: #7a65cd;
+}
+
+.message-text-input {
+    margin-right: 6px;
+    color: white;
+    height: 23px;
+}
+
+.chatboxUsers {
+  opacity: 0.8;
+  font-size: smaller;
+  text-align: center;
+  //  display: inline;
+  color: white;
+  border-radius: 3px;
+  font-weight: bold;
+  line-height: normal;
+}
+
+.chatboxUl {
+    margin: 5px 0 0 0;
+    color: white;
+    margin-bottom: 10px;
+    max-height: 300px;
+    overflow: scroll;
+}
+
+.chat-img {
+  width: 281px;
+  border-radius: 7px;
+  padding: 3px 0;
+}
+
+button {
+  cursor: pointer;
+  margin-right: 2px;
+  margin-bottom: 1px;
+}
+
+aside.emoji-picker-react {
+    background: #fff;
+    display: flex;
+    flex-direction: column;
+    height: 320px;
+    width: 280px;
+    font-family: sans-serif;
+    border: 1px solid #efefef;
+    border-radius: 5px;
+    box-sizing: border-box;
+    box-shadow: 0 0px 0px #efefef; 
+    overflow: hidden;
+}
+
+
+
+span.chatbox-ellipsis {
+  margin: 3px;
+  padding: 3px;
+}
+
+.chatbox-bottom {
+    height: 52px;
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    border-top: 2px solid white;
+    align-items: center;
+    background-color: #6684ce;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+}
+
+.picker-wrapper{
+    position: absolute;
+    top: 361px;
+}
+
+
+.text-input-button{
+    height: 25px;
+}
+.text-input-button2{
+    height: 20px;
+    font-size: 12px;
+}
+.text-input-button:focus, .text-input-button2:focus{
+   outline: none;
+}
+
+.text-input-button-invalid:focus {
+   outline: none;
+}
+
+.text-input-button-invalid {
+   color: darkgrey;
+   height: 100%;
+}
+
+button.text-input-button2.reply-emoji {
+    height: 25px;
+}
+.text-input-button2.reply-emoji:hover {
+    background-color: #859dd7;
+}
+
+.text-input-button.reply:hover {
+    background-color: #859dd7;
+}
