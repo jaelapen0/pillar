@@ -3,6 +3,7 @@
   "version": "1.0.0",
   "description": "chat application, in columns",
   "main": "app.js",
+  
   "scripts": {
     "start": "node app.js",
     "server": "nodemon app.js",
